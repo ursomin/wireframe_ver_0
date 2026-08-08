@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>종목 관리 | PLAYUPP Admin</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="admin-body">
+  <aside class="admin-sidebar">
+    <a href="../index.html" class="admin-brand">PLAY<span>UPP</span><small>ADMIN</small></a>
+    <nav><a class="admin-nav-item " href="index.html"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10H7V11h10v10"/></svg><span>대시보드</span></a><a class="admin-nav-item " href="users.html"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.5-4 2.4-6 5.5-6s5 2 5.5 6M16 7a2.5 2.5 0 0 1 0 5m1 1c2.2.3 3.5 2 4 5"/></svg><span>회원 관리</span></a><a class="admin-nav-item " href="meetings.html"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 2v4m8-4v4M5 9h14"/></svg><span>모임 관리</span></a><a class="admin-nav-item " href="reports.html"><svg viewBox="0 0 24 24"><path d="M5 21V4m0 1h11l-2 4 2 4H5"/></svg><span>신고 관리</span></a><a class="admin-nav-item active" href="sports.html"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M5.5 8.5 12 12l6.5-3.5M12 12v8"/></svg><span>종목 관리</span></a><a class="admin-nav-item " href="stats.html"><svg viewBox="0 0 24 24"><path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/></svg><span>운영 통계</span></a></nav>
+    <div class="admin-side-bottom">
+      <a href="../index.html"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10H7V11h10v10"/></svg><span>사용자 사이트</span></a>
+      <a href="#"><svg viewBox="0 0 24 24"><path d="M10 5H4v14h6m4-4 4-3-4-3m4 3H9"/></svg><span>로그아웃</span></a>
+    </div>
+  </aside>
+  <main class="admin-main">
+    <header class="admin-top">
+      <div><h1>종목 관리</h1><p>기본 종목과 사용자 생성 종목을 검토합니다.</p></div>
+      <div class="admin-top-actions">
+        <button class="icon-btn notification"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></button>
+        <span class="avatar">관</span><div><strong>관리자</strong><small>admin@playupp.kr</small></div>
+      </div>
+    </header>
+    <section class="admin-content">
+<div class="admin-stats"><div class="stat-card"><span>기본 종목</span><strong>18</strong><small>관리자 등록</small></div><div class="stat-card"><span>사용자 생성</span><strong>42</strong><small>검토 완료 34</small></div><div class="stat-card"><span>검토 대기</span><strong>8</strong><small>중복 여부 확인</small></div><div class="stat-card"><span>이번 주 신규</span><strong>13</strong><small>+22%</small></div></div>
+<div class="admin-grid"><section class="admin-card"><h2>사용자 생성 종목 검토</h2><div class="table-wrap"><table class="list-table"><thead><tr><th>종목명</th><th>생성자</th><th>생성일</th><th>유사 종목</th><th>처리</th></tr></thead><tbody><tr><td><strong>패들테니스</strong></td><td>sportsman</td><td>08/08</td><td>테니스</td><td><button class="btn sm blue">승인</button> <button class="btn sm">병합</button> <button class="btn sm danger">거절</button></td></tr><tr><td><strong>실내야구</strong></td><td>baseball22</td><td>08/08</td><td>야구</td><td><button class="btn sm blue">승인</button> <button class="btn sm">병합</button> <button class="btn sm danger">거절</button></td></tr></tbody></table></div></section><section class="admin-card"><h2>인기 종목 산정 기준</h2><div class="timeline"><div class="timeline-item"><div class="timeline-dot">1</div><div><strong>관심 종목 등록 수</strong><p>최근 사용자 관심도 반영</p></div></div><div class="timeline-item"><div class="timeline-dot">2</div><div><strong>최근 모임 생성 횟수</strong><p>서비스 내 공급량 반영</p></div></div><div class="timeline-item"><div class="timeline-dot">3</div><div><strong>실제 참여 횟수</strong><p>실제 활동량 반영</p></div></div></div></section></div></section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>채팅 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>채팅</h1><p>참여한 모임톡은 운동이 끝난 뒤에도 계속 이용할 수 있어요.</p></div></div>
+<section class="chat-layout"><aside class="chat-sidebar"><div class="chat-sidebar-head"><div class="tabs"><button class="active">모임톡</button><button>개인톡</button></div></div>
+<a class="chat-room" data-chat-room="completed-badminton" href="chat.html?room=completed-badminton"><span class="avatar">배</span><div class="grow"><strong>8월 주말 아침 배드민턴</strong><p>민수: 다음 주에도 같이 할래요?</p><small class="chat-room-state">운동 완료 · 채팅방 유지 중</small></div></a>
+<a class="chat-room active" data-chat-room="active-badminton" href="chat.html?room=active-badminton"><span class="avatar">배</span><div class="grow"><strong>주말 아침 배드민턴</strong><p>민수: 내일 뵐게요!</p></div></a>
+<a class="chat-room" data-chat-room="table-tennis" href="chat.html?room=table-tennis"><span class="avatar">탁</span><div class="grow"><strong>평일 저녁 탁구</strong><p>영호: 장소 확인했습니다.</p></div></a>
+</aside>
+
+<div class="chat-main" data-chat-panel="active-badminton"><div class="chat-main-head"><div><strong>주말 아침 배드민턴 같이 쳐요!</strong><div class="subtle">참여자 4명 · 08/10 10:00</div></div><a class="btn sm" href="detail.html">모임 정보</a></div>
+<div class="messages"><div class="message"><span class="avatar">제</span><div class="bubble"><strong>제니</strong><br>안녕하세요! 내일 9시 50분까지 체육관 입구에서 만나요.</div></div><div class="message"><a href="user-profile.html" aria-label="민수 프로필"><span class="avatar">민</span></a><div class="bubble"><a href="user-profile.html"><strong>민수</strong></a><br>네 확인했습니다. 라켓 챙겨갈게요!</div></div><div class="message mine"><div class="bubble">저도 확인했습니다 👍</div></div></div>
+<div class="chat-input"><input placeholder="메시지를 입력하세요"><button class="btn blue" data-toast="정적 프로토타입에서는 실제 메시지가 전송되지 않습니다.">전송</button></div></div>
+
+<div class="chat-main" data-chat-panel="completed-badminton" hidden><div class="chat-main-head"><div><strong>8월 주말 아침 배드민턴</strong><div class="subtle">운동 완료 · 참여자 4명 · 채팅방 유지 중</div></div><button class="btn sm" data-modal-open="membersModal">참여자 보기</button></div>
+<div class="messages"><div class="chat-archive-note">운동이 종료된 모임입니다. 이 채팅방과 대화는 계속 유지됩니다.</div><div class="message"><a href="user-profile.html" aria-label="민수 프로필"><span class="avatar">민</span></a><div class="bubble"><a href="user-profile.html"><strong>민수</strong></a><br>오늘 즐거웠어요! 다음 주에도 같이 할래요?</div></div><div class="message"><a href="user-profile.html" aria-label="지연 프로필"><span class="avatar">지</span></a><div class="bubble"><a href="user-profile.html"><strong>지연</strong></a><br>좋아요. 저는 토요일 오전 괜찮아요!</div></div><div class="message mine"><div class="bubble">저도 좋아요. 일정 정해지면 새 모임 만들게요 🙌</div></div></div>
+<div class="chat-input"><input placeholder="메시지를 입력하세요"><button class="btn blue" data-toast="정적 프로토타입에서는 실제 메시지가 전송되지 않습니다.">전송</button></div></div>
+
+<div class="chat-main" data-chat-panel="table-tennis" hidden><div class="chat-main-head"><div><strong>평일 저녁 탁구 모임</strong><div class="subtle">참여자 6명 · 08/12 20:00</div></div><a class="btn sm" href="detail.html">모임 정보</a></div><div class="messages"><div class="message"><a href="user-profile.html"><span class="avatar">영</span></a><div class="bubble"><a href="user-profile.html"><strong>영호</strong></a><br>장소 확인했습니다. 저녁에 뵐게요!</div></div></div><div class="chat-input"><input placeholder="메시지를 입력하세요"><button class="btn blue" data-toast="정적 프로토타입에서는 실제 메시지가 전송되지 않습니다.">전송</button></div></div>
+</section></main>
+
+<div id="membersModal" class="modal-backdrop" hidden><div class="modal"><h2>함께 운동한 참여자</h2><p>프로필을 확인한 뒤 원하는 사람에게만 친구 요청을 보낼 수 있어요.</p><div class="friend-grid"><a class="friend-card" href="user-profile.html"><span class="avatar">민</span><div class="grow"><strong>민수</strong><small>배드민턴 초급</small></div><span class="btn sm">프로필</span></a><a class="friend-card" href="user-profile.html"><span class="avatar">지</span><div class="grow"><strong>지연</strong><small>배드민턴 중급</small></div><span class="btn sm">프로필</span></a></div><div class="modal-actions"><button class="btn" data-modal-close>닫기</button></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

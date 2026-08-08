@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>출석 관리 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="active" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>출석 관리</h1><p>주말 아침 배드민턴 같이 쳐요! · 운동 종료 후 참여 상태를 기록합니다.</p></div><a class="btn" href="host-manage.html">신청자 관리</a></div>
+<section class="card"><div class="table-wrap" style="border:0"><table class="list-table"><thead><tr><th>참여자</th><th>실력</th><th>현재 상태</th><th>출석 처리</th></tr></thead><tbody>
+<tr><td><strong>민수</strong></td><td><span class="badge">초급</span></td><td><span class="badge gray">미처리</span></td><td><div class="choice-row"><button class="choice active">정상 참여</button><button class="choice">지각</button><button class="choice">사전 취소</button><button class="choice">당일 취소</button><button class="choice">No-Show</button></div></td></tr>
+<tr><td><strong>지연</strong></td><td><span class="badge purple">중급</span></td><td><span class="badge gray">미처리</span></td><td><div class="choice-row"><button class="choice active">정상 참여</button><button class="choice">지각</button><button class="choice">사전 취소</button><button class="choice">당일 취소</button><button class="choice">No-Show</button></div></td></tr>
+<tr><td><strong>영호</strong></td><td><span class="badge">초급</span></td><td><span class="badge gray">미처리</span></td><td><div class="choice-row"><button class="choice">정상 참여</button><button class="choice active">지각</button><button class="choice">사전 취소</button><button class="choice">당일 취소</button><button class="choice">No-Show</button></div></td></tr>
+</tbody></table></div><div class="form-actions" style="padding:16px"><a class="btn" href="my-meetings.html">나중에</a><a class="btn blue" href="review.html">출석 저장 후 실력 평가</a></div></section></main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

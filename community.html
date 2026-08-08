@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>커뮤니티 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav">
+      <a href="index.html">모임 찾기</a>
+      <a href="create.html">모임 생성</a>
+      <a href="my-meetings.html">내 모임</a>
+      <a href="friends.html">친구</a>
+      <a class="active" href="community.html">커뮤니티</a>
+    </nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">나</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <a class="notice-inner" href="community.html">
+      <div class="notice-copy">
+        <svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg>
+        <strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span>
+      </div>
+      <span>›</span>
+    </a>
+  </div>
+</header>
+
+<main class="page-width">
+  <div class="page-head">
+    <div>
+      <h1>커뮤니티</h1>
+      <p>PLAYUPP의 새로운 소식과 이용자들의 이야기를 확인해 보세요.</p>
+    </div>
+    <button class="btn blue" data-toast="글쓰기 기능은 정적 프로토타입 준비 중입니다.">글쓰기</button>
+  </div>
+
+  <div class="community-layout">
+    <aside class="community-menu card" aria-label="커뮤니티 게시판">
+      <strong>게시판</strong>
+      <a class="active" href="community.html">전체 글</a>
+      <a href="community.html">공지사항 <span>1</span></a>
+      <a href="community.html">자유게시판</a>
+      <a href="community.html">운동 꿀팁</a>
+    </aside>
+
+    <section class="community-board" aria-labelledby="community-title">
+      <div class="community-board-head">
+        <div>
+          <h2 id="community-title">전체 글</h2>
+          <p>총 1개의 글이 있습니다.</p>
+        </div>
+        <label class="community-search">
+          <input type="search" placeholder="게시글 검색" aria-label="게시글 검색">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </label>
+      </div>
+
+      <details class="community-post card">
+        <summary class="community-post-summary">
+          <span class="badge red">공지</span>
+          <h3>서비스 점검 안내</h3>
+          <span class="community-post-info">운영자 · 2026.08.09 · 조회 1</span>
+          <span class="community-post-arrow" aria-hidden="true">›</span>
+        </summary>
+        <div class="community-post-body">
+          <p>안녕하세요, PLAYUPP입니다.</p>
+          <p><strong>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</strong></p>
+          <p>점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있습니다.<br>더 안정적인 서비스를 제공하기 위한 점검이오니 이용에 참고해 주세요.</p>
+          <p>감사합니다.</p>
+        </div>
+      </details>
+    </section>
+  </div>
+</main>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

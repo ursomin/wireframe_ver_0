@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>알림 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>알림</h1><p>참여 신청, 승인, 모임 변경 등 중요한 소식을 확인하세요.</p></div><button class="btn sm">모두 읽음</button></div><div class="notice-list">
+<div class="notice-item"><div class="notice-icon">✓</div><div><h3>참여 신청이 승인되었습니다.</h3><p>‘평일 저녁 탁구 모임’ 참여가 확정되었습니다. 모임톡에 입장할 수 있어요.</p></div><time>5분 전</time></div>
+<div class="notice-item"><div class="notice-icon">👤</div><div><h3>새로운 참여 신청이 도착했습니다.</h3><p>민수님이 ‘주말 아침 배드민턴’에 참여 신청했습니다.</p></div><time>20분 전</time></div>
+<div class="notice-item"><div class="notice-icon">!</div><div><h3>모임 정보가 변경되었습니다.</h3><p>장소가 선학체육관 2번 코트로 변경되었습니다.</p></div><time>2시간 전</time></div>
+<div class="notice-item"><div class="notice-icon">↕</div><div><h3>실력 평가를 남겨주세요.</h3><p>어제 함께 운동한 참여자들의 등록 실력이 실제와 비슷했는지 평가할 수 있어요.</p></div><time>어제</time></div>
+</div></main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

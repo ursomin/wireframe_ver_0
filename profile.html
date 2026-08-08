@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>프로필 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>내 프로필</h1><p>운동별 실력과 참여 기록을 관리하세요.</p></div><button class="btn">프로필 수정</button></div><div class="profile-grid"><aside class="panel profile-summary"><span class="avatar lg">제</span><h2>제니</h2><p class="subtle">인천광역시 연수구</p><div class="metric-row"><div class="metric"><strong>22</strong><small>참여</small></div><div class="metric"><strong>96%</strong><small>참여율</small></div><div class="metric"><strong>12</strong><small>친구</small></div></div><div style="margin-top:16px"><a class="btn block" href="friends.html">친구 목록 보기</a></div></aside>
+<section style="display:grid;gap:14px"><div class="panel"><div class="toolbar" style="min-height:auto"><h2>운동 프로필</h2><button class="btn sm">+ 종목 추가</button></div><div class="sport-profile"><div><strong>배드민턴</strong><div class="subtle">활동 15회 · 최근 참여 3일 전</div></div><span class="badge purple">중급</span></div><div class="sport-profile"><div><strong>탁구</strong><div class="subtle">활동 7회 · 최근 참여 2주 전</div></div><span class="badge">초급</span></div></div>
+<div class="panel"><div class="participation-head"><div><h2>상세 참여율</h2><p>이 상세 내역은 본인에게만 표시됩니다.</p></div><span class="private-label">나만 보기</span></div><div class="table-wrap"><table class="participation-table"><tbody><tr><th>전체 참가</th><td>22회</td></tr><tr><th>정상 출석</th><td>21회</td></tr><tr><th>출석률</th><td><strong>96%</strong></td></tr><tr><th>당일 취소</th><td>0회</td></tr><tr><th>노쇼</th><td>0회</td></tr><tr><th>호스트 취소</th><td>1회</td></tr></tbody></table></div></div>
+<div class="panel"><h2>최근 활동</h2><div class="timeline"><div class="timeline-item"><div class="timeline-dot">✓</div><div><strong>배드민턴 모임 참여 완료</strong><p>8월 3일 · 선학체육관</p></div></div><div class="timeline-item"><div class="timeline-dot">＋</div><div><strong>민수님에게 친구 요청을 보냈어요</strong><p>8월 3일 · 함께한 모임에서 추가</p></div></div></div></div></section></div></main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>친구 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="active" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>친구 · 재매칭</h1><p>함께 운동했던 사람을 친구로 추가하고 다시 만날 수 있어요.</p></div><button class="btn blue">친구 찾기</button></div>
+<section class="card"><div class="tabs" data-tabs><button class="active" data-tab-target="#friendList">친구 12</button><button data-tab-target="#pastUsers">함께 운동한 사람</button><button data-tab-target="#requests">친구 요청 2</button></div>
+<div id="friendList" data-tab-panel style="padding:16px"><div class="friend-grid"><div class="friend-card"><span class="avatar">민</span><div class="grow"><strong>민수</strong><small>배드민턴 초급 · 함께 4회</small></div><a class="btn sm" href="chat.html">개인톡</a></div><div class="friend-card"><span class="avatar">지</span><div class="grow"><strong>지연</strong><small>배드민턴 중급 · 함께 2회</small></div><a class="btn sm" href="chat.html">개인톡</a></div></div></div>
+<div id="pastUsers" data-tab-panel hidden style="padding:16px"><div class="friend-grid"><div class="friend-card"><span class="avatar">영</span><div class="grow"><strong>영호</strong><small>탁구 초급 · 함께 1회</small></div><button class="btn sm blue" data-toast="친구 요청을 보냈습니다.">친구 추가</button></div></div></div>
+<div id="requests" data-tab-panel hidden style="padding:16px"><div class="friend-grid"><div class="friend-card"><span class="avatar">수</span><div class="grow"><strong>수빈</strong><small>배드민턴 중급</small></div><button class="btn sm blue">수락</button><button class="btn sm">거절</button></div></div></div></section></main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

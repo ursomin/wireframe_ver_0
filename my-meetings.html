@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>내 모임 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="active" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width">
+  <div class="page-head"><div><h1>내 모임</h1><p>참여 중인 모임부터 확인하고, 종료된 모임과 모임톡도 다시 찾아볼 수 있어요.</p></div><a class="btn blue" href="create.html">+ 새 모임 만들기</a></div>
+
+  <section class="meeting-section">
+    <div class="section-heading"><div><h2>참여 중인 모임</h2><p>신청했거나 참여가 확정된 모임입니다.</p></div><span class="badge">2개</span></div>
+    <div class="meeting-list">
+      <article class="meeting-card clickable" onclick="location.href='detail.html'">
+        <div class="thumb">탁</div><div><span class="badge purple">탁구</span><h3>평일 저녁 탁구 모임</h3><div class="meta"><span>◷ 08/12 · 20:00~22:00</span><span>⌖ 인천 미추홀구</span></div><div class="meta"><span>⚡ 입문~중급</span><span>♙ 6/8명</span></div></div>
+        <div class="meeting-side"><span class="badge green">참여 확정</span><a class="btn sm" href="chat.html?room=table-tennis" onclick="event.stopPropagation()">모임톡</a></div>
+      </article>
+      <article class="meeting-card clickable" onclick="location.href='detail.html'">
+        <div class="thumb">풋</div><div><span class="badge green">풋살</span><h3>주말 풋살 번개</h3><div class="meta"><span>◷ 08/16 · 18:00~20:00</span><span>⌖ 인천 남동구</span></div><div class="meta"><span>⚡ 초급~중급</span><span>♙ 7/10명</span></div></div>
+        <div class="meeting-side"><span class="badge orange">승인 대기</span><button class="btn sm danger" onclick="event.stopPropagation()" data-toast="참여 신청을 취소했습니다.">신청 취소</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="meeting-section completed-meetings">
+    <div class="section-heading"><div><h2>참여했던 모임</h2><p>운동이 끝난 모임입니다. 모임톡은 종료 후에도 계속 남아 있어요.</p></div><span class="badge gray">1개</span></div>
+    <article class="meeting-card clickable completed-card" onclick="location.href='chat.html?room=completed-badminton'">
+      <div class="thumb">배</div><div><span class="badge">배드민턴</span><h3>8월 주말 아침 배드민턴</h3><div class="meta"><span>✓ 2026.08.03 운동 완료</span><span>⌖ 선학체육관</span></div><div class="meta"><span>참여자 4명</span><span>채팅방 유지 중</span></div></div>
+      <div class="meeting-side"><span class="badge gray">운동 완료</span><div class="meeting-card-actions"><button class="btn sm soft" onclick="event.stopPropagation()" data-modal-open="skillReviewModal">실력 평가</button><a class="btn sm" href="chat.html?room=completed-badminton" onclick="event.stopPropagation()">모임톡 다시보기</a></div></div>
+    </article>
+  </section>
+</main>
+
+<div id="skillReviewModal" class="modal-backdrop" hidden><div class="modal review-modal">
+  <h2>운동 후 실력 평가</h2><p>함께 운동한 사람의 실력이 본인이 등록한 수준과 비슷했는지 익명으로 알려주세요.</p>
+  <div class="peer-review-list">
+    <div class="peer-review"><a class="peer-profile" href="user-profile.html"><span class="avatar">민</span><strong>민수</strong><small>등록 실력: 초급</small></a><div class="choice-row"><button class="choice">등록한 실력보다 낮아요</button><button class="choice active">등록한 실력과 비슷해요</button><button class="choice">등록한 실력보다 높아요</button></div></div>
+    <div class="peer-review"><a class="peer-profile" href="user-profile.html"><span class="avatar">지</span><strong>지연</strong><small>등록 실력: 중급</small></a><div class="choice-row"><button class="choice">등록한 실력보다 낮아요</button><button class="choice active">등록한 실력과 비슷해요</button><button class="choice">등록한 실력보다 높아요</button></div></div>
+  </div>
+  <div class="modal-actions"><button class="btn" data-modal-close>나중에</button><button class="btn blue" data-modal-close data-toast="실력 평가를 저장했습니다.">평가 완료</button></div>
+</div></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

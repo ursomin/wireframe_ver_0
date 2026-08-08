@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>운동 프로필 설정 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box">
+        <input type="search" placeholder="모임, 종목, 지역 검색">
+        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+      </label>
+      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
+      <span>›</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="page-width"><div class="page-head"><div><h1>운동 프로필 설정</h1><p>관심 종목과 현재 실력을 등록하면 더 잘 맞는 모임을 추천할 수 있어요.</p></div><span class="badge">1 / 1 단계</span></div>
+<section class="form-card"><div class="form-section"><h2>관심 종목</h2><div class="choice-row"><button class="choice active">배드민턴</button><button class="choice">탁구</button><button class="choice">풋살</button><button class="choice">러닝</button><button class="choice">당구</button><button class="choice">클라이밍</button><button class="choice">+ 직접 종목 추가</button></div></div>
+<div class="form-section"><h2>배드민턴 실력</h2><div class="choice-row"><button class="choice" data-level-description="입문: 규칙도 아직 잘 모르는 단계">입문</button><button class="choice active" data-level-description="초급: 규칙을 알고 기본 동작을 할 수 있는 단계">초급</button><button class="choice" data-level-description="중급: 경기를 안정적으로 진행할 수 있는 단계">중급</button><button class="choice" data-level-description="고급: 다양한 기술과 전략을 능숙하게 활용하는 단계">고급</button></div><p class="level-help" data-level-help>초급: 규칙을 알고 기본 동작을 할 수 있는 단계</p><div class="level-guide"><span><strong>입문</strong> 규칙도 아직 잘 몰라요</span><span><strong>초급</strong> 기본 동작을 할 수 있어요</span><span><strong>중급</strong> 경기를 안정적으로 진행해요</span><span><strong>고급</strong> 기술과 전략을 능숙하게 써요</span></div></div>
+<div class="form-section"><h2>주 활동 지역</h2><div class="field"><input value="인천광역시 연수구"></div></div>
+<div class="form-actions"><a class="btn" href="index.html">나중에 설정</a><a class="btn blue" href="index.html">저장하고 시작하기</a></div></section></main>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
