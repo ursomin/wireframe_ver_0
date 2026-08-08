@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>모임방 관리 | PLAYUPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
+    <nav class="main-nav"><a href="index.html">모임 찾기</a><a href="create.html">모임 생성</a><a class="active" href="my-meetings.html">내 모임</a><a href="friends.html">친구</a><a href="community.html">커뮤니티</a></nav>
+    <div class="top-actions">
+      <label class="search-box"><input type="search" placeholder="모임, 종목, 지역 검색"><button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button></label>
+      <a class="icon-btn" href="chat.html?room=meeting-hosted-badminton" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
+      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
+      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+    </div>
+  </div>
+  <div class="notice-bar"><div class="notice-inner"><div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div><span>›</span></div></div>
+</header>
+
+<main class="page-width">
+  <div class="page-head"><div><a class="subtle" href="my-meetings.html">← 내 모임</a><h1>모임방 관리</h1><p>참가 신청을 처리하고 현재 참여자를 관리하세요.</p></div><a class="btn blue" href="chat.html?room=meeting-hosted-badminton">모임톡 열기</a></div>
+
+  <section class="room-summary card">
+    <div class="room-summary-main"><span class="thumb room-thumb">배</span><div><span class="badge">배드민턴</span><h2>주말 아침 배드민턴 같이 쳐요!</h2><p>2026.08.10 · 10:00~12:00 · 선학체육관</p></div></div>
+    <div class="room-summary-stats"><span><strong data-room-member-count>3명</strong><small>참여자</small></span><span><strong data-room-request-count>1건</strong><small>참가 신청</small></span></div>
+  </section>
+
+  <div class="room-manage-grid">
+    <section class="panel room-requests">
+      <div class="section-heading"><div><h2>참가 신청</h2><p>프로필을 확인한 뒤 승인하거나 거절하세요.</p></div><span class="badge orange" data-room-request-badge>1</span></div>
+      <div class="room-request-list" data-room-requests>
+        <article class="room-request-card" data-room-applicant="dahyun">
+          <a class="room-person-copy" href="user-profile.html?user=dahyun"><span class="avatar">다</span><span><strong>다현</strong><small>배드민턴 초급 · 참여율 94%</small></span></a>
+          <p>“주말마다 배드민턴을 배우고 있어요. 열심히 참여하겠습니다!”</p>
+          <div class="room-request-actions"><button class="btn sm" data-room-reject="dahyun">거절</button><button class="btn sm blue" data-room-approve="dahyun">참가 승인</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel room-members">
+      <div class="section-heading"><div><h2>현재 참여자</h2><p>참여자 프로필을 누르면 관리 메뉴가 열립니다.</p></div><span class="badge green" data-room-member-badge>3명</span></div>
+      <div class="room-member-list" data-room-members>
+        <div class="room-member-card host"><span class="avatar">제</span><div><strong>제니</strong><small>모임장 · 중급</small></div><span class="badge gray">나</span></div>
+        <button class="room-member-card" data-room-member="eunah"><span class="avatar">은</span><span><strong>은아</strong><small>배드민턴 초급 · 참여율 100%</small></span><span>›</span></button>
+        <button class="room-member-card" data-room-member="gyudong"><span class="avatar">규</span><span><strong>규동</strong><small>배드민턴 중급 · 참여율 91%</small></span><span>›</span></button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
