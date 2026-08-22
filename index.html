@@ -1,183 +1,283 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>모임 찾기 | PLAYUPP</title>
-  <link rel="stylesheet" href="styles.css">
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        PLAYUPP
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
 </head>
+
 <body>
+
 <header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
-    <nav class="main-nav">
-      <a class="active" href="index.html">모임 찾기</a>
-      <a href="create.html">모임 생성</a>
-      <a href="my-meetings.html">내 모임</a>
-      <a href="friends.html">친구</a>
-      <a href="community.html">커뮤니티</a>
-    </nav>
 
-    <div class="top-actions">
-      <label class="search-box">
-        <input type="search" placeholder="모임, 종목, 지역 검색">
-        <button aria-label="검색">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-        </button>
-      </label>
+    <div class="topbar-inner">
 
-      <a class="icon-btn" href="chat.html" aria-label="채팅">
-        <svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg>
-      </a>
+        <a
+            class="brand"
+            href="index.html"
+        >
+            <span class="brand-mark">
+                PLAY<span>UPP</span>
+            </span>
+        </a>
 
-      <a class="icon-btn notification" href="notifications.html" aria-label="알림">
-        <svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg>
-        <span class="dot"></span>
-      </a>
+        <nav class="main-nav">
 
-      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+            <a href="index.html">
+                모임 찾기
+            </a>
+
+            <a href="create.html">
+                모임 생성
+            </a>
+
+            <a href="my-meetings.html">
+                내 모임
+            </a>
+
+        </nav>
+
+        <div class="top-actions">
+
+            <a href="chat.html">
+                채팅
+            </a>
+
+            <a href="profile.html">
+                내 프로필
+            </a>
+
+        </div>
+
     </div>
-  </div>
 
-  <div class="notice-bar">
-    <a class="notice-inner" href="community.html" aria-label="서비스 점검 공지사항 보기">
-      <div class="notice-copy">
-        <svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg>
-        <strong>공지사항</strong>
-        <span>·</span>
-        <span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span>
-      </div>
-      <span>›</span>
-    </a>
-  </div>
 </header>
 
-<main class="shell">
-  <div class="content-grid">
-    <aside class="panel left-filter">
-      <h2>빠른 필터</h2>
-      <div class="chip-grid">
-        <button class="chip">오늘</button>
-        <button class="chip">내일</button>
-        <button class="chip">한 자리 남음</button>
-        <button class="chip">내 지역</button>
-        <button class="chip">초보자 가능</button>
-        <button class="chip">비용 없음</button>
-      </div>
 
-      <div class="panel-divider"></div>
+<main class="page-width">
 
-      <h2>상세 검색</h2>
-      <div class="select-stack">
-        <button class="select-like"><span>종목</span><span>⌄</span></button>
-        <button class="select-like"><span>지역</span><span>⌄</span></button>
-        <button class="select-like"><span>날짜</span><span>⌄</span></button>
-        <button class="select-like"><span>시간대</span><span>⌄</span></button>
-        <button class="select-like"><span>실력 수준</span><span>⌄</span></button>
-        <button class="select-like"><span>모집 상태</span><span>⌄</span></button>
-        <button class="select-like"><span>참가비</span><span>⌄</span></button>
-      </div>
-      <button class="btn primary block" style="margin-top:10px">검색하기</button>
-    </aside>
+    <div class="page-head">
 
-    <section>
-      <div class="hero">
-        <span class="eyebrow">생활체육 번개매칭</span>
-        <h1>같이 운동할 사람을 찾고,<br>건강한 습관을 함께 만들어가요!</h1>
-        <p>지역 기반으로 원하는 종목과 시간의 모임을 빠르게 찾아보세요.</p>
-        <div class="hero-art"></div>
-      </div>
+        <div>
 
-      <div class="toolbar">
-        <h2>모임 목록 <small>(총 126건)</small></h2>
-        <div class="toolbar-actions">
-          <div class="sort">
-            <button class="btn" data-sort-button>
-              정렬: <strong data-sort-label>가까운 일정순</strong> ⌄
-            </button>
-            <div class="sort-menu" data-sort-menu hidden>
-              <button data-sort-option="최근 등록순">최근 등록순</button>
-              <button data-sort-option="가까운 거리순">가까운 거리순</button>
-              <button data-sort-option="남은 자리 적은 순">남은 자리 적은 순</button>
-            </div>
-          </div>
+            <h1>
+                모임 찾기
+            </h1>
 
-          <button class="btn" data-location>
-            <svg viewBox="0 0 24 24"><path d="M12 21s6-5.33 6-11a6 6 0 1 0-12 0c0 5.67 6 11 6 11Zm0-8.5A2.5 2.5 0 1 0 12 7a2.5 2.5 0 0 0 0 5.5Z"/></svg>
-            내 위치 사용
-          </button>
+            <p>
+                원하는 조건으로 운동 모임을 찾아보세요.
+            </p>
+
         </div>
-      </div>
 
-      <div class="meeting-list">
-        <article class="meeting-card clickable" onclick="location.href='detail.html'">
-          <div class="thumb">배</div>
-          <div>
-            <span class="badge">배드민턴</span>
-            <h3>주말 아침 배드민턴 같이 쳐요!</h3>
-            <div class="meta"><span>◷ 08/10 · 10:00~12:00</span><span>⌖ 인천 연수구 · 300m</span></div>
-            <div class="meta"><span>⚡ 초급~중급</span><span>♙ 4/6명</span><span>₩ 2,000원</span></div>
-          </div>
-          <div class="meeting-side"><button class="heart">♡</button><span class="badge">모집 중</span></div>
-        </article>
 
-        <article class="meeting-card clickable" onclick="location.href='detail.html'">
-          <div class="thumb">풋</div>
-          <div>
-            <span class="badge green">풋살</span>
-            <h3>저녁 풋살 번개 ⚡</h3>
-            <div class="meta"><span>◷ 08/10 · 19:00~21:00</span><span>⌖ 인천 남동구 · 1.2km</span></div>
-            <div class="meta"><span>⚡ 초급~중급</span><span>♙ 7/10명</span><span>₩ 5,000원</span></div>
-          </div>
-          <div class="meeting-side"><button class="heart">♡</button><span class="badge orange">마감 임박</span></div>
-        </article>
+        <a
+            href="create.html"
+            class="btn blue"
+        >
+            + 모임 만들기
+        </a>
 
-        <article class="meeting-card clickable" onclick="location.href='detail.html'">
-          <div class="thumb">탁</div>
-          <div>
-            <span class="badge purple">탁구</span>
-            <h3>평일 저녁 탁구 모임</h3>
-            <div class="meta"><span>◷ 08/12 · 20:00~22:00</span><span>⌖ 인천 미추홀구 · 2.4km</span></div>
-            <div class="meta"><span>⚡ 입문~중급</span><span>♙ 6/8명</span><span>₩ 각자 결제</span></div>
-          </div>
-          <div class="meeting-side"><button class="heart">♡</button><span class="badge">모집 중</span></div>
-        </article>
+    </div>
 
-        <article class="meeting-card clickable" onclick="location.href='detail.html'">
-          <div class="thumb">당</div>
-          <div>
-            <span class="badge orange">당구</span>
-            <h3>주말 4구 한 게임 하실 분</h3>
-            <div class="meta"><span>◷ 08/13 · 14:00~16:00</span><span>⌖ 인천 부평구 · 4.1km</span></div>
-            <div class="meta"><span>⚡ 중급</span><span>♙ 3/4명</span><span>₩ 비용 없음</span></div>
-          </div>
-          <div class="meeting-side"><button class="heart">♡</button><span class="badge orange">1자리 남음</span></div>
-        </article>
-      </div>
+
+    <section
+        class="panel"
+        style="margin-bottom:20px"
+    >
+
+        <h2>
+            검색 및 필터
+        </h2>
+
+
+        <div
+            class="form-grid"
+            style="margin-top:16px"
+        >
+
+            <div class="field">
+
+                <label for="keywordInput">
+                    검색어
+                </label>
+
+                <input
+                    id="keywordInput"
+                    type="text"
+                    placeholder="제목 또는 설명"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="sportFilter">
+                    운동 종목
+                </label>
+
+                <select id="sportFilter">
+
+                    <option value="">
+                        전체 종목
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="dateFilter">
+                    날짜
+                </label>
+
+                <input
+                    id="dateFilter"
+                    type="date"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="locationFilter">
+                    지역
+                </label>
+
+                <input
+                    id="locationFilter"
+                    type="text"
+                    placeholder="예: 인천, 강남"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="statusFilter">
+                    모집 상태
+                </label>
+
+                <select id="statusFilter">
+
+                    <option value="">
+                        전체 상태
+                    </option>
+
+                    <option value="RECRUITING">
+                        모집 중
+                    </option>
+
+                    <option value="CLOSED">
+                        모집 마감
+                    </option>
+
+                    <option value="COMPLETED">
+                        모임 완료
+                    </option>
+
+                    <option value="CANCELED">
+                        모임 취소
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div
+            style="
+                display:flex;
+                gap:10px;
+                margin-top:18px;
+            "
+        >
+
+            <button
+                id="searchButton"
+                class="btn blue"
+                type="button"
+            >
+                검색
+            </button>
+
+            <button
+                id="resetButton"
+                class="btn"
+                type="button"
+            >
+                초기화
+            </button>
+
+        </div>
+
     </section>
 
-    <aside class="right-rail">
-      <section class="card ranking-card">
-        <h2 class="card-title">실시간 인기 종목</h2>
-        <ol class="ranking-list">
-          <li><span class="rank">1위</span><strong>탁구</strong><span>🔥</span></li>
-          <li><span class="rank">2위</span><strong>배드민턴</strong></li>
-          <li><span class="rank">3위</span><strong>당구</strong></li>
-          <li><span class="rank">4위</span><strong>풋살</strong></li>
-        </ol>
-      </section>
 
-      <section class="card ad-card">
-        <span class="badge gray">AD</span>
-        <h3>운동은 같이 할 때<br>더 오래 갑니다.</h3>
-        <p>이번 주 가까운 번개 모임을 찾아보세요.</p>
-        <button class="btn primary sm">모임 둘러보기</button>
-      </section>
-    </aside>
-  </div>
+    <div
+        id="meetingCount"
+        class="subtle"
+        style="margin-bottom:12px"
+    >
+    </div>
+
+
+    <section>
+
+        <div
+            id="meetingsList"
+            style="
+                display:grid;
+                grid-template-columns:
+                    repeat(
+                        auto-fit,
+                        minmax(260px, 1fr)
+                    );
+                gap:16px;
+            "
+        >
+
+            <div class="panel">
+                모임 정보를 불러오는 중...
+            </div>
+
+        </div>
+
+    </section>
+
 </main>
 
-<div id="toast" class="toast"></div>
-<script src="app.js"></script>
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+<script src="meetings-api.js"></script>
+
 </body>
+
 </html>

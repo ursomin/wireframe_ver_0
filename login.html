@@ -1,1 +1,116 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>로그인 | PLAYUPP</title><link rel="stylesheet" href="styles.css"></head><body><main class="auth-page"><section class="auth-card"><div class="auth-brand">PLAY<span>UPP</span></div><h1>로그인</h1><p>운동할 사람을 가장 빠르게 만나보세요.</p><div class="auth-fields"><div class="field"><label>아이디</label><input placeholder="아이디 입력"></div><div class="field"><label>비밀번호</label><input type="password" placeholder="비밀번호 입력"></div></div><div class="auth-links"><label><input type="checkbox"> 로그인 유지</label><a href="#">비밀번호 찾기</a></div><a href="index.html" class="btn blue block">로그인</a><div class="divider-text">또는 소셜 로그인</div><div class="social-grid"><button class="social">Google</button><button class="social">Naver</button><button class="social">Kakao</button></div><div class="terms">아직 회원이 아니신가요? <a href="signup.html" style="color:#2563eb;font-weight:800">회원가입</a></div></section></main><div id="toast" class="toast"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>로그인 | PLAYUPP</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="auth-page">
+
+    <section class="auth-card">
+
+        <div class="auth-brand">
+            PLAY<span>UPP</span>
+        </div>
+
+        <h1>로그인</h1>
+
+        <p>
+            운동할 사람을 가장 빠르게 만나보세요.
+        </p>
+
+        <div class="auth-fields">
+
+            <div class="field">
+                <label for="loginId">아이디</label>
+
+                <input
+                    id="loginId"
+                    type="text"
+                    placeholder="아이디 입력"
+                >
+            </div>
+
+            <div class="field">
+                <label for="loginPassword">비밀번호</label>
+
+                <input
+                    id="loginPassword"
+                    type="password"
+                    placeholder="비밀번호 입력"
+                >
+            </div>
+
+        </div>
+
+        <div class="auth-links">
+
+            <label>
+                <input type="checkbox">
+                로그인 유지
+            </label>
+
+            <a href="#">
+                비밀번호 찾기
+            </a>
+
+        </div>
+
+        <button
+            id="loginButton"
+            class="btn blue block"
+            type="button"
+        >
+            로그인
+        </button>
+
+        <div class="divider-text">
+            또는 소셜 로그인
+        </div>
+
+        <div class="social-grid">
+
+            <button class="social" type="button">
+                Google
+            </button>
+
+            <button class="social" type="button">
+                Naver
+            </button>
+
+            <button class="social" type="button">
+                Kakao
+            </button>
+
+        </div>
+
+        <div class="terms">
+
+            아직 회원이 아니신가요?
+
+            <a
+                href="signup.html"
+                style="color:#2563eb; font-weight:800"
+            >
+                회원가입
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<div id="toast" class="toast"></div>
+
+<script src="auth-api.js"></script>
+
+</body>
+</html>
