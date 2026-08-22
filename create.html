@@ -1,43 +1,233 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>모임 생성 | PLAYUPP</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        모임 생성 | PLAYUPP
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
 </head>
-<body class="">
+
+<body>
 
 <header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">PLAY<span>UPP</span></span></a>
-    <nav class="main-nav"><a class="" href="index.html">모임 찾기</a><a class="active" href="create.html">모임 생성</a><a class="" href="my-meetings.html">내 모임</a><a class="" href="friends.html">친구</a><a class="" href="community.html">커뮤니티</a></nav>
-    <div class="top-actions">
-      <label class="search-box">
-        <input type="search" placeholder="모임, 종목, 지역 검색">
-        <button aria-label="검색"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
-      </label>
-      <a class="icon-btn" href="chat.html" aria-label="채팅"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 3v-14Z"/></svg></a>
-      <a class="icon-btn notification" href="notifications.html" aria-label="알림"><svg viewBox="0 0 24 24"><path d="M6.5 9.5a5.5 5.5 0 0 1 11 0c0 6 2.5 6 2.5 7.5H4c0-1.5 2.5-1.5 2.5-7.5Zm3 10h5"/></svg><span class="dot"></span></a>
-      <a class="profile-link" href="profile.html"><span class="avatar">제</span></a>
+
+    <div class="topbar-inner">
+
+        <a
+            class="brand"
+            href="index.html"
+        >
+            <span class="brand-mark">
+                PLAY<span>UPP</span>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                모임 찾기
+            </a>
+
+            <a href="create.html">
+                모임 생성
+            </a>
+
+            <a href="my-meetings.html">
+                내 모임
+            </a>
+
+        </nav>
+
+        <div class="top-actions">
+
+            <a href="chat.html">
+                채팅
+            </a>
+
+            <a href="profile.html">
+                내 프로필
+            </a>
+
+        </div>
+
     </div>
-  </div>
-  <div class="notice-bar">
-    <div class="notice-inner">
-      <div class="notice-copy"><svg viewBox="0 0 24 24"><path d="m4 13 3-1v-2l11-4v12L7 14v-1m0 0v5m2-1H5"/></svg><strong>공지사항</strong><span>·</span><span>2026년 08월 09일 00:00 ~ 01:00 서비스 점검이 진행됩니다.</span></div>
-      <span>›</span>
-    </div>
-  </div>
+
 </header>
 
 
-<main class="page-width"><div class="page-head"><div><h1>모임 생성</h1><p>함께 운동할 사람을 모집할 모임 정보를 입력하세요.</p></div></div><section class="form-card">
-<div class="form-section"><h2>기본 정보</h2><div class="form-grid"><div class="field full"><label>모임 제목</label><input placeholder="예: 주말 아침 배드민턴 같이 쳐요!"></div><div class="field full"><label>한 줄 소개</label><input placeholder="모임을 간단하게 소개해주세요."></div><div class="field"><label>운동 종목</label><select><option>배드민턴</option><option>탁구</option><option>풋살</option><option>직접 생성한 종목</option></select></div><div class="field full"><label>참여 승인 방식</label><div class="approval-options"><label class="approval-option"><input type="radio" name="approval" value="instant"><span><strong>빠른 매칭</strong><small>신청 즉시 자동 승인되어 모임톡에 바로 참여합니다.</small></span></label><label class="approval-option active"><input type="radio" name="approval" value="host" checked><span><strong>모임장 승인 필수</strong><small>모임장이 신청자의 프로필을 확인하고 승인합니다.</small></span></label></div></div></div></div>
-<div class="form-section"><h2>일정 및 장소</h2><div class="form-grid"><div class="field"><label>운동 날짜</label><input type="date" value="2026-08-10"></div><div class="field"><label>시작 시간</label><input type="time" value="10:00"></div><div class="field"><label>예상 종료 시간</label><input type="time" value="12:00"></div><div class="field"><label>지역</label><select><option>인천광역시 연수구</option></select></div><div class="field full"><label>상세 장소</label><div style="display:flex;gap:8px"><input value="선학체육관 배드민턴장"><button class="btn" data-toast="주변 체육시설 조회 화면 예시입니다.">주변 시설 찾기</button></div><span class="hint">추후 공공 체육시설 OpenAPI를 연결할 수 있는 영역</span></div></div></div>
-<div class="form-section"><h2>모집 조건</h2><div class="form-grid"><div class="field"><label>모집 인원</label><input type="number" value="6"></div><div class="field"><label>참여 가능 성별</label><select><option>제한 없음</option><option>남성만</option><option>여성만</option></select></div><div class="field"><label>최소 실력</label><select><option>입문</option><option selected>초급</option><option>중급</option><option>고급</option></select></div><div class="field"><label>최대 실력</label><select><option>입문</option><option>초급</option><option selected>중급</option><option>고급</option></select></div><div class="field full"><div class="level-guide"><span><strong>입문</strong> 규칙도 아직 잘 몰라요</span><span><strong>초급</strong> 기본 동작을 할 수 있어요</span><span><strong>중급</strong> 경기를 안정적으로 진행해요</span><span><strong>고급</strong> 기술과 전략을 능숙하게 써요</span></div></div><div class="field"><label>참가비 / 예상 비용</label><input value="2000"></div><div class="field"><label>우천 시 취소 여부</label><select><option>실내 진행 / 취소 없음</option><option>우천 시 취소</option></select></div><div class="field full"><label>준비물</label><input value="개인 라켓"></div></div></div>
-<div class="form-section"><h2>상세 소개</h2><div class="field"><textarea placeholder="진행 방식, 주의사항, 준비물 등 참가자가 알아야 할 내용을 작성해주세요."></textarea></div></div>
-<div class="form-actions"><a href="index.html" class="btn">취소</a><button class="btn blue" data-toast="정적 프로토타입: 모임이 생성된 것으로 처리합니다.">모임 만들기</button></div></section></main>
-<div id="toast" class="toast"></div>
-<script src="app.js"></script>
+<main class="page-width">
+
+    <div class="page-head">
+
+        <div>
+
+            <h1>
+                모임 생성
+            </h1>
+
+            <p>
+                새로운 운동 모임을 만들어보세요.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <section
+        class="panel"
+        style="
+            max-width:760px;
+            margin:auto;
+        "
+    >
+
+        <div class="form-grid">
+
+            <div class="field full">
+
+                <label for="meetingTitle">
+                    모임 제목
+                </label>
+
+                <input
+                    id="meetingTitle"
+                    type="text"
+                    placeholder="예: 주말 배드민턴 같이 하실 분"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="meetingSport">
+                    운동 종목
+                </label>
+
+                <select id="meetingSport">
+
+                    <option value="">
+                        종목 선택
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="meetingDate">
+                    모임 날짜
+                </label>
+
+                <input
+                    id="meetingDate"
+                    type="date"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="meetingLocation">
+                    장소
+                </label>
+
+                <input
+                    id="meetingLocation"
+                    type="text"
+                    placeholder="예: 인천 연수구 체육관"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="meetingMaxMembers">
+                    모집 인원
+                </label>
+
+                <input
+                    id="meetingMaxMembers"
+                    type="number"
+                    min="1"
+                    placeholder="예: 8"
+                >
+
+            </div>
+
+
+            <div class="field full">
+
+                <label for="meetingDescription">
+                    모임 설명
+                </label>
+
+                <textarea
+                    id="meetingDescription"
+                    rows="7"
+                    placeholder="모임에 대한 설명을 입력해주세요."
+                ></textarea>
+
+            </div>
+
+        </div>
+
+
+        <div
+            style="
+                display:flex;
+                gap:10px;
+                margin-top:24px;
+            "
+        >
+
+            <button
+                id="createMeetingButton"
+                class="btn blue"
+                type="button"
+            >
+                모임 생성
+            </button>
+
+            <a
+                href="index.html"
+                class="btn"
+            >
+                취소
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<div
+    id="toast"
+    class="toast"
+></div>
+
+
+<script src="create-meeting-api.js"></script>
+
 </body>
+
 </html>
